@@ -1,0 +1,26 @@
+{
+  "scopeName": "source.lithium-asm",
+  "patterns": [
+    {
+      "name": "keyword.control.lithium-asm",
+      "match": "(?i)\\b(NOP|HALT|PUSH|POP|ADD|SUB|MUL|DIV|MOD|NEG|POW|FACT|PRINT|PRINTSTR|CONCAT|TOSTR|JMP|JZ|JNZ|JE|JNE|JGT|JGE|JLT|GT|GE|LT|LE|JLE|EQ|NE|INC|DEC|DUP|STORE|PSTORE|LOAD|STOSTR|LOADSTR|SYSCALL|CALL|RET|RETVAL)\\b"
+    },
+    {
+      "name": "variable.other.lithium-asm",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "constant.numeric.lithium-asm",
+      "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "entity.name.label.lithium-asm",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*:\\b"
+    },
+    {
+      "name": "comment.line.number-sign.lithium",
+      "match": "#.*$"
+    }
+  ],
+  "repository": {}
+}

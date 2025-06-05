@@ -1,0 +1,67 @@
+{
+  "name": "lithium-language-support",
+  "displayName": "Lithium Language Support",
+  "description": "Adds support for the Lithium programming language.",
+  "author": {
+    "name": "Bryce Schultz",
+    "email": "bryceschultz@live.com"
+  },
+  "publisher": "bryce-schultz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bryce-schultz/stack-vm"
+  },
+  "main": "./extension.js",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "scripts": {
+    "package": "vsce package --out build/lithium-language-support.vsix"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "./assets/lithium-icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "lithium",
+        "aliases": [
+          "Lithium",
+          "lithium"
+        ],
+        "extensions": [
+          ".li"
+        ],
+        "configuration": "lithium-configuration.json"
+      },
+      {
+        "id": "lithium-asm",
+        "aliases": [
+          "Lithium Assembly",
+          "lithium asm"
+        ],
+        "extensions": [
+          ".lsm"
+        ],
+        "configuration": "lithium-asm-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "lithium",
+        "scopeName": "source.lithium",
+        "path": "./syntaxes/lithium.tmLanguage.json"
+      },
+      {
+        "language": "lithium-asm",
+        "scopeName": "source.lithium-asm",
+        "path": "./syntaxes/lithium-asm.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "punycode": "^2.3.1"
+  }
+}

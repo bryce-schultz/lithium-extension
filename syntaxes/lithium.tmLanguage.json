@@ -1,0 +1,64 @@
+{
+  "scopeName": "source.lithium",
+  "patterns": [
+    {
+      "name": "keyword.lithium",
+      "match": "\\b(let|const|true|false)\\b"
+    },
+    {
+      "name": "keyword.control.lithium",
+      "match": "\\b(for|while|fn|return)\\b"
+    },
+    {
+      "name": "keyword.control.conditional.lithium",
+      "match": "\\b(if|else)\\b"
+    },
+    {
+      "name": "comment.line.number-sign.lithium",
+      "match": "#.*$"
+    },
+    {
+      "name": "entity.name.function.lithium",
+      "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()"
+    },
+    {
+      "name": "variable.other.lithium",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "constant.numeric.lithium",
+      "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "keyword.operator.lithium",
+      "match": "\\+|\\-|\\*|\\/|=|<|>|<=|>=|==|!=|&&|\\|\\|"
+    },
+    {
+      "name": "punctuation.separator.lithium",
+      "match": "[{}();]"
+    },
+    {
+      "name": "string.quoted.double.lithium",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.lithium",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "string.quoted.single.lithium",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.lithium",
+          "match": "\\\\."
+        }
+      ]
+    }
+  ],
+  "repository": {}
+}

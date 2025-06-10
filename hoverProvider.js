@@ -11,6 +11,7 @@ const hoverTexts = {
     "let": "Variable declaration. Declares a new variable with the specified name and value.",
     "const": "Constant declaration. Declares a new constant with the specified name and value.",
     "return": "Returns a value from a function. Ends the execution of the function.",
+    "break": "Exits the nearest loop. Can be used to terminate the execution of a loop.",
     "true": "Boolean literal. Represents the true value.",
     "false": "Boolean literal. Represents the false value.",
     "exit": "Exits the program immediately. Can be used to terminate the execution of the Lithium program.",

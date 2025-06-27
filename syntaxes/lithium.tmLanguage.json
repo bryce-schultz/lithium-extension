@@ -82,7 +82,7 @@
       "patterns": [
         {
           "name": "keyword.control.lithium",
-          "match": "\\b(for|while|if|else|fn|return|break|let|const|import|class|pub)\\b"
+            "match": "\\b(assert|break|class|const|continue|else|fn|for|foreach|if|import|let|return|while)\\b"
         }
       ]
     },
@@ -90,7 +90,7 @@
       "patterns": [
         {
           "name": "constant.language.lithium",
-          "match": "\\b(true|false|null|PI|E|VERSION|FILE|LINE)\\b"
+          "match": "\\b(true|false|null|VERSION|FILE|LINE)\\b"
         }
       ]
     },
@@ -149,7 +149,35 @@
       "patterns": [
         {
           "name": "keyword.operator.lithium",
-          "match": "[+\\-*/%!=<>]=?|&&|\\|\\||!|,|;|\\.|\\(|\\)|\\[|\\]|\\{|\\}"
+          "match": "[+\\-*/%]=?|==|!=|<=|>=|<|>|&&|\\|\\||!"
+        },
+        {
+          "name": "punctuation.separator.lithium",
+          "match": ";"
+        },
+        {
+          "name": "punctuation.separator.lithium",
+          "match": ","
+        },
+        {
+          "name": "punctuation.accessor.lithium",
+          "match": "\\."
+        },
+        {
+          "name": "punctuation.accessor.lithium",
+          "match": ":"
+        },
+        {
+          "name": "punctuation.bracket.round.lithium",
+          "match": "[()]"
+        },
+        {
+          "name": "punctuation.bracket.square.lithium",
+          "match": "[\\[\\]]"
+        },
+        {
+          "name": "punctuation.bracket.curly.lithium",
+          "match": "[{}]"
         }
       ]
     },
